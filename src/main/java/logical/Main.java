@@ -139,7 +139,7 @@ public class Main {
                 if (formAux.attr("method").equalsIgnoreCase("POST")) {
 
                     Connection connection = ((FormElement) formAux).submit();
-                    connection.data("Asignatura","Practica1");
+                    connection.data("asignatura","practica1");
                     connection.header("Matricula", "2016-1066");
                     Connection.Response response;
                     System.out.println("Request parameters: " + connection.request().data() + "\n" + "Request headers:\n" + connection.request().headers());
