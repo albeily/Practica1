@@ -11,6 +11,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class Main {
@@ -38,7 +39,7 @@ public class Main {
 
                     document = Jsoup.connect(urlInserted).get();
 
-                } catch (MalformedURLException | IllegalArgumentException e) {
+                } catch (MalformedURLException | UnknownHostException | IllegalArgumentException e) {
                     validURL = false;
                 }
 
